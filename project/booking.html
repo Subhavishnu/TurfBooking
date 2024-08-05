@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container1{
+            background-color: rgba(233, 167, 15, 0.866);
+            width: 20%;
+            padding-top: 20px;
+            border-radius: 10%;
+        } 
+        button:hover{
+            background-color: rgb(235, 12, 12);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container1">
+            <form method="get">
+                
+                <h1>Book your slot</h1>
+                <div>
+                    <label for="">TeamName</label>
+                    <input type="text" name="name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="">No.of.persons</label>
+                    <input type="number" name="persons" min="8" max="16" required>
+                </div>
+                <br>
+
+                <div>
+                    <button  onclick="location.href='./success.html'">Book</button>
+                </div>
+                <br>
+            </form>
+            </div>
+</center>
+</body>
+</html>

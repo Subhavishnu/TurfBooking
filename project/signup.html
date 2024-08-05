@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            background-color: rgba(233, 167, 15, 0.866);
+            width: 20%;
+            padding-top: 20px;
+            border-radius: 10%;
+            position: fixed;
+        }
+        
+        .full{
+            background-image: url
+        }
+        body{
+            background-image: url("IMG-20240731-WA0000.jpg");
+            width: 50%;
+            height: 600px;
+            background-attachment: fixed;
+            background-position: 20%;
+            background-size: cover;
+            padding-left:40%;
+
+        }
+        .nav{
+            padding-left: 95%;
+            font-size: x-large;
+            font-weight: 500;
+        }
+        li{
+            list-style: none;
+            font-size: larger;
+        }
+        a{
+            color: rgb(255, 253, 253);
+        }
+        button:hover{
+            background-color: rgb(235, 12, 12);
+            color: black;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+        <nav class="nav">
+            <li><a href="./e-com.html">Home</a></li>
+        </nav>
+       </div>
+    <center>
+    <div class="container1">
+    <form method="get">
+        <h1>Sign Up</h1>
+        <div>
+            <label for="">UserName</label>
+            <input type="text" name="name" id="name1" required>
+        </div>
+        <br>
+        <div class="email">
+            <label for="">Email</label>
+            <input type="email" name="email" id="email1" required>
+        </div>
+        <br>
+        <div class="num">
+            <label for="">Number                              </label>
+            <input type="text" name="phn" id="num1" required>
+        </div>
+        <br>
+        <div class="pass">
+            <label for="">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <br>
+            <button onclick="signup()">Signup</button>
+        </div>
+        <br>
+    </form>
+    </div>
+</center>
+<script>
+    function signup(){
+        let name=document.getElementById("name1").value;
+        let email=document.getElementById("email1").value;
+        let password=document.getElementById("password").value;
+        let num=document.getElementById("num1").value;
+        localStorage.setItem(name,password);
+        console.log(name+email+password)
+        window.location.href="login.html";
+    }
+</script>
+
+</body>
+</html>
